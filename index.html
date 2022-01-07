@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Modal Window</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="modal-window">
+            <div class="fixed-overlay">
+                <div class="modal">
+                    <div class="modal__container">
+                        <div class="modal__container-items">
+                            <div class="modal__item">
+                                <h2 class="modal__container-title">Title form</h2>
+                                <span class="close"></span>
+                            </div>
+                            <div class="modal__input-items">
+                                <input placeholder="First Name *" type="text" class="input-item" required />
+                                <input placeholder="Last Name *" type="text" class="input-item" required />
+                                <input placeholder="user@gmail.com*" name="email" type="email" class="input-item" required />
+                            </div>
+                            <div class="modal__producte-select">
+                                <p class="text">Product type *</p>
+                                <select class="producte-select" required>
+                                    <option value="" style="display: none" >
+                                        Select product type
+                                    </option>
+                                    <option data-price="100" class="productOptions" value="100">Product 100$</option>
+                                    <option data-price="200" class="productOptions" value="200">Product 200$</option>
+                                    <option data-price="300" class="productOptions" value="300">Product 300$</option>
+                                </select>
+                            </div>
+                            <div class="modal__additional-items">
+                                <div class="container-toggle">
+                                    <label for="toggle-button" class="text">Additional feature for 100$</label>
+                                    <input data-price="100" type="checkbox" id="toggle-button" class="toggle-button" />
+                                </div>
+                                <div class="container-toggle">
+                                    <label for="toggle-button" class="text">Additional feature for 200$</label>
+                                    <input data-price="200" type="checkbox" id="toggle-button" class="toggle-button" />
+                                </div>
+                            </div>
+                            <div class="modal__comments">
+                                <textarea placeholder="Type your comment" cols="30" rows="6"></textarea>
+                            </div>
+                            <div class="modal__price">
+                                <p class="text">Total price</p>
+                                <p class="modal__price-value">0$</p>
+                            </div>
+                            <div class="button">
+                                <button class="send-btn">Send form</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
